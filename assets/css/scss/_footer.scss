@@ -1,0 +1,22 @@
+.address-content {
+  position: relative;
+  border-top: 2px solid $white;
+  border-bottom: 2px solid $white;
+  .img-certification {
+    height: 3rem;
+    position: absolute;
+    z-index: 99;
+    top: 23%;
+    right: 0;
+  }
+  p {
+    margin-bottom: 0.3125rem;
+  }
+}
+
+.contact-content {
+  img {
+    width: 2.4375rem;
+    height: 2.4375rem;
+  }
+}

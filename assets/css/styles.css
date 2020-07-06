@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .monkey-color-white {
   color: #fff !important;
 }
@@ -48,6 +49,10 @@
 
 .monkey-color-light-yellow {
   color: #fdbe25 !important;
+}
+
+.monkey-color-light-brown {
+  color: #939598 !important;
 }
 
 .monkey-color-transparent {
@@ -106,6 +111,10 @@
   border-color: #fdbe25 !important;
 }
 
+.monkey-bc-light-brown {
+  border-color: #939598 !important;
+}
+
 .monkey-bc-transparent {
   border-color: transparent !important;
 }
@@ -162,6 +171,10 @@
   background-color: #fdbe25;
 }
 
+.monkey-bg-light-brown {
+  background-color: #939598;
+}
+
 .monkey-bg-transparent {
   background-color: transparent;
 }
@@ -176,6 +189,10 @@
 
 .monkey-fz-16 {
   font-size: 1rem;
+}
+
+.monkey-fz-1c {
+  font-size: ‭1 0.11438‬rem;
 }
 
 .monkey-fz-20 {
@@ -202,8 +219,8 @@
   font-size: 14.8rem;
 }
 
-.monkey-f-monkey {
-  font-family: "Monkey";
+.monkey-f-header {
+  font-family: "Monkey-header";
 }
 
 .monkey-f-bold {
@@ -423,6 +440,11 @@ body {
   font-size: 16px;
 }
 
+.parents-share, .monkey-result {
+  padding-top: 2.3125rem;
+  padding-bottom: 2.3125rem;
+}
+
 .monkey-nav {
   height: 76px;
 }
@@ -509,7 +531,7 @@ body {
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #00c2f3;
+  background: #ed232f;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -517,6 +539,10 @@ body {
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
+}
+
+.navbar-nav .monkey-nav-item.active .nav-link {
+  color: #ed232f;
 }
 
 .navbar-nav .monkey-nav-item.active::before {
@@ -546,6 +572,12 @@ body {
 .nav-link {
   position: relative;
   height: 100%;
+  font-family: "Monkey-medium";
+  color: #58595b !important;
+}
+
+.nav-link:hover {
+  color: #58595b !important;
 }
 
 .nav-link .icon-caret-down {
@@ -697,7 +729,7 @@ body {
 }
 
 .course-ware {
-  background-image: url(../images/banner/background-course.svg);
+  background-image: url(../images/banner/bg-course.svg);
 }
 
 .course-ware .card-img-top {
@@ -710,8 +742,27 @@ body {
   height: 3rem;
 }
 
-.form-registration {
-  border-radius: 10px;
+.registration-wrapper {
+  border-radius: 0.625rem;
+}
+
+.form-registration .form-registration-body {
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.form-registration .form-registration-body .form-control {
+  border-radius: 0;
+  border-left: none;
+  padding-left: 0;
+}
+
+.form-registration .input-group-text img {
+  height: 0.9375rem;
+}
+
+.form-registration .input-group-text .icon-email {
+  height: 0.6625rem;
 }
 
 .monkey-prize-item .card-image {
@@ -732,5 +783,37 @@ body {
 .monkey-prize-item .card-image img {
   width: 14.635rem;
   height: 5.25rem;
+}
+
+.address-content {
+  position: relative;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.address-content .img-certification {
+  height: 3rem;
+  position: absolute;
+  z-index: 99;
+  top: 23%;
+  right: 0;
+}
+
+.address-content p {
+  margin-bottom: 0.3125rem;
+}
+
+.contact-content img {
+  width: 2.4375rem;
+  height: 2.4375rem;
+}
+
+.parents-share {
+  background-image: url(../images/banner/bg-parents-share.svg);
+}
+
+.card-result .card-result-header img {
+  width: 2.96875rem;
+  height: 2.96875rem;
 }
 /*# sourceMappingURL=styles.css.map */

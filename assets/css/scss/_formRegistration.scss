@@ -1,3 +1,22 @@
+.registration-wrapper{
+    border-radius: 0.625rem;
+}
 .form-registration{
-    border-radius: 10px;
+    .form-registration-body{
+        border-radius: 0.625rem;
+        overflow: hidden;
+        .form-control{
+            border-radius: 0;
+            border-left: none;
+            padding-left: 0;
+        }
+    }
+    .input-group-text{
+        img {
+            height: 0.9375rem;
+        }
+        .icon-email{
+            height:0.6625rem;
+        }
+    }
 }

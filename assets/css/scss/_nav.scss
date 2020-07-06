@@ -58,7 +58,7 @@
       left: 51%;
       right: 51%;
       bottom: 0;
-      background: $green;
+      background: $red;
       height: 4px;
       -webkit-transition-property: left, right;
       transition-property: left, right;
@@ -68,6 +68,9 @@
       transition-timing-function: ease-out;
     }
     &.active {
+      .nav-link{
+        color: $red;
+      }
       &::before {
         left: 0;
         right: 0;
@@ -94,6 +97,11 @@
 .nav-link {
   position: relative;
   height: 100%;
+  font-family: $MonkeyMedium;
+  color: $light-black !important;
+  &:hover {
+    color: $light-black !important;
+  }
   .icon-caret-down {
     width: 10px;
     height: 9px;
