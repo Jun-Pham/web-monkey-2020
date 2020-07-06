@@ -1,0 +1,24 @@
+.distance-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background-style {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .text-decoration {
+    text-decoration: underline;
+  }
+  .cursor{
+    cursor: pointer;
+  }
+  .monkey-line{
+    width: 2.4375rem;
+    height: 0.3125rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $red;
+  }

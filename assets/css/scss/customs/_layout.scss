@@ -1,0 +1,44 @@
+@mixin padding-style($number) {
+  padding-top: $number;
+  padding-bottom: $number;
+}
+
+@mixin font-style($number) {
+  font-size: $number;
+}
+
+// html {
+//   @include font-style(11.5px);
+// }
+
+// @media (max-width: 1024px) {
+//   html {
+//     @include font-style(15px);
+//   }
+// }
+// @media (max-width: 991px) {
+//   html {
+//     @include font-style(12px);
+//   }
+// }
+// @media (max-width: 767px) {
+//   html {
+//     @include font-style(10px);
+//   }
+// }
+// @media (max-width: 575px) {
+//   html {
+//     @include font-style(8px);
+//   }
+// }
+
+body {
+  height: 100%;
+  width: 100%;
+  color: $gray;
+  font-family: "Monkey-medium";
+  line-height: 1.2;
+  background-color: $light-gray;
+  padding-right: 0 !important ;
+  font-size: 16px;
+}

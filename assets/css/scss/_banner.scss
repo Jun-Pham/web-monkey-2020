@@ -1,0 +1,20 @@
+
+.monkey-banner {
+    background-image: url("../images/banner/banner_home.svg");
+    height: 645px;
+    .banner-video,
+    .banner-content {
+      width: 100%;
+      height: 381.412px;
+    }
+    .banner-video {
+      background-image: url("../images/banner/img-banner.jpg");
+      height: 381.412px;
+      width: 100%;
+      position: relative;
+      .icon-play {
+        width: 78px;
+        height: 78px;
+      }
+    }
+  }

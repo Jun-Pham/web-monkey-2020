@@ -1,0 +1,29 @@
+.monkey-course {
+  padding-top: 3.3125rem;
+  padding-bottom: 3.3125rem;
+  .card {
+    border-radius: 0.625rem;
+    overflow: hidden;
+    .card-img-top {
+      height: 5.625rem;
+      width: auto;
+      margin: auto;
+    }
+    .card-body {
+      min-height: 7.5rem;
+    }
+  }
+}
+
+.course-ware {
+    background-image: url(../images/banner/background-course.svg);
+  .card-img-top {
+    height: 8.8125rem;
+    width: auto;
+  }
+}
+
+.icon-monkey-course {
+    width: 3rem;
+    height: 3rem;
+  }

@@ -1,0 +1,79 @@
+$white: #fff;
+$red: #ed232f;
+$gray: #6d6e71;
+$black:#595a5c;
+$yellow: #f4eb33;
+$sunshine: #fbad18;
+$pink: #7a428d;
+$blue: #92c83e;
+$green: #00c2f3;
+$light-gray: #f1f2f2;
+$light-black: #58595b;
+$light-red: #d71920;
+$light-yellow:#fdbe25;
+$transparent:transparent;
+
+$color: (
+  white: $white,
+  red: $red,
+  gray: $gray,
+  black: $black,
+  yellow: $yellow,
+  sunshine: $sunshine,
+  pink: $pink,
+  blue: $blue,
+  green: $green,
+  light-gray: $light-gray,
+  light-black:$light-black,
+  light-red:$light-red,
+  light-yellow:$light-yellow,
+  transparent: $transparent,
+);
+
+$Header: "Monkey";
+$MonkeyBold: "Monkey-bold";
+$MonkeyMedium: "Monkey-medium";
+$MonkeyRegular: "Monkey-regular";
+
+$fontFamily: (
+  monkey: $Header,
+  bold: $MonkeyBold,
+  medium: $MonkeyMedium,
+  regular: $MonkeyRegular,
+);
+
+$distance-20: 1.3rem;
+$distance-25: 1.5rem;
+$distance-30: 1.875rem;
+$distance-45: 2.8125rem;
+
+$distance: (
+  20: $distance-20,
+  25: $distance-25,
+  30: $distance-30,
+  45: $distance-45,
+);
+
+$f12: 0.75rem;
+$f14: 0.875rem;
+$f16: 1rem;
+$f17: ‭1.114375‬rem;
+$f20: 1.25rem;
+$f25: 1.67rem;
+$f30: 1.875rem;
+$f40: 2.5rem;
+$f43: 2.6875rem;
+$f222: 14.8rem;
+
+$fontSize: (
+  12: $f12,
+  14: $f14,
+  16: $f16,
+  20: $f20,
+  25: $f25,
+  30: $f30,
+  40: $f40,
+  43: $f43,
+  222: $f222,
+);
+
