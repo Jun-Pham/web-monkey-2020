@@ -1,18 +1,18 @@
 $white: #fff;
 $red: #ed232f;
 $gray: #6d6e71;
-$black:#595a5c;
+$black: #595a5c;
 $yellow: #f4eb33;
 $sunshine: #fbad18;
 $pink: #7a428d;
-$blue: #92c83e;
-$green: #00c2f3;
+$blue: #00c2f3;
+$green: #92c83e;
 $light-gray: #f1f2f2;
 $light-black: #58595b;
 $light-red: #d71920;
-$light-yellow:#fdbe25;
-$light-brown:#939598;
-$transparent:transparent;
+$light-yellow: #fdbe25;
+$light-brown: #939598;
+$transparent: transparent;
 
 $color: (
   white: $white,
@@ -25,10 +25,10 @@ $color: (
   blue: $blue,
   green: $green,
   light-gray: $light-gray,
-  light-black:$light-black,
-  light-red:$light-red,
-  light-yellow:$light-yellow,
-  light-brown:$light-brown,
+  light-black: $light-black,
+  light-red: $light-red,
+  light-yellow: $light-yellow,
+  light-brown: $light-brown,
   transparent: $transparent,
 );
 
@@ -59,7 +59,7 @@ $distance: (
 $f12: 0.75rem;
 $f14: 0.875rem;
 $f16: 1rem;
-$f18: ‭1.114375‬rem;
+$f18: ‭1.125‬rem;
 $f20: 1.25rem;
 $f25: 1.67rem;
 $f30: 1.875rem;
@@ -71,7 +71,7 @@ $fontSize: (
   12: $f12,
   14: $f14,
   16: $f16,
-  1c:$f18,
+  18: $f18,
   20: $f20,
   25: $f25,
   30: $f30,
@@ -79,4 +79,3 @@ $fontSize: (
   43: $f43,
   222: $f222,
 );
-

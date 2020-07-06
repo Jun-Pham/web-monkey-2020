@@ -28,11 +28,11 @@
 }
 
 .monkey-color-blue {
-  color: #92c83e !important;
+  color: #00c2f3 !important;
 }
 
 .monkey-color-green {
-  color: #00c2f3 !important;
+  color: #92c83e !important;
 }
 
 .monkey-color-light-gray {
@@ -88,11 +88,11 @@
 }
 
 .monkey-bc-blue {
-  border-color: #92c83e !important;
+  border-color: #00c2f3 !important;
 }
 
 .monkey-bc-green {
-  border-color: #00c2f3 !important;
+  border-color: #92c83e !important;
 }
 
 .monkey-bc-light-gray {
@@ -148,11 +148,11 @@
 }
 
 .monkey-bg-blue {
-  background-color: #92c83e;
+  background-color: #00c2f3;
 }
 
 .monkey-bg-green {
-  background-color: #00c2f3;
+  background-color: #92c83e;
 }
 
 .monkey-bg-light-gray {
@@ -191,8 +191,8 @@
   font-size: 1rem;
 }
 
-.monkey-fz-1c {
-  font-size: ‭1 0.11438‬rem;
+.monkey-fz-18 {
+  font-size: ‭1 0.125‬rem;
 }
 
 .monkey-fz-20 {
@@ -440,7 +440,7 @@ body {
   font-size: 16px;
 }
 
-.parents-share, .monkey-result {
+.parents-share, .monkey-result, .typical-students {
   padding-top: 2.3125rem;
   padding-bottom: 2.3125rem;
 }
@@ -560,27 +560,18 @@ body {
   display: block;
 }
 
-.navbar-nav .monkey-nav-item .dropdown-menu {
-  top: 96%;
-}
-
-.navbar-nav .monkey-nav-item .dropdown-menu .dropdown-item:hover {
-  background-color: #00c2f3;
-  color: #fff;
-}
-
-.nav-link {
+.navbar-nav .monkey-nav-item .nav-link {
   position: relative;
   height: 100%;
   font-family: "Monkey-medium";
-  color: #58595b !important;
+  color: #58595b;
 }
 
-.nav-link:hover {
-  color: #58595b !important;
+.navbar-nav .monkey-nav-item .nav-link:hover {
+  color: #58595b;
 }
 
-.nav-link .icon-caret-down {
+.navbar-nav .monkey-nav-item .nav-link .icon-caret-down {
   width: 10px;
   height: 9px;
   right: -20px;
@@ -597,6 +588,15 @@ body {
   transition-property: transform, -webkit-transform;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
+}
+
+.navbar-nav .monkey-nav-item .dropdown-menu {
+  top: 96%;
+}
+
+.navbar-nav .monkey-nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #92c83e;
+  color: #fff;
 }
 
 .navbar-toggler {
@@ -746,6 +746,10 @@ body {
   border-radius: 0.625rem;
 }
 
+.registration-wrapper .media .media-title {
+  width: 25%;
+}
+
 .form-registration .form-registration-body {
   border-radius: 0.625rem;
   overflow: hidden;
@@ -815,5 +819,15 @@ body {
 .card-result .card-result-header img {
   width: 2.96875rem;
   height: 2.96875rem;
+}
+
+.typical-students {
+  background-position: top center;
+  background-image: url(../images/banner/bg-typical-students.svg);
+}
+
+.typical-students-video {
+  height: 11.125rem;
+  width: auto;
 }
 /*# sourceMappingURL=styles.css.map */
