@@ -23,8 +23,8 @@
           <span class="toggler-icon">
             <span class="hamburger"></span>
           </span>
-          <a class="p-0 m-auto" href="#"><img class="logo" src="./assets/images/logo/logo.svg" alt="#" /></a>
-          <!-- <a class="p-0 m-auto" href="#"><img class="logo" src="./assets/images/logo/logo-mobile.svg" alt="#" /></a> -->
+          <a class="p-0 m-auto d-none d-lg-block" href="#"><img class="logo" src="./assets/images/logo/logo.svg" alt="#" /></a>
+          <a class="p-0 m-auto d-block d-lg-none" href="#"><img class="logo" src="./assets/images/logo/logo-mobile.svg" alt="#" /></a>
           <div class="monkey-collapse">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item monkey-nav-item pr-4" 
@@ -32,7 +32,7 @@
               <a class="nav-link distance-center">Sản phẩm
                   <img class="icon-caret-down" src="./assets/images/icon/icon-dropdown.svg" />
                 </a>
-                <div class="dropdown-menu rounded-0">
+                <div class="monkey-dropdown-menu">
                   <a class="dropdown-item" href="#">
                     Học Monkey Junior</a>
                   <a class="dropdown-item" href="#">
@@ -49,7 +49,7 @@
               <a class="nav-link distance-center">Hướng dẫn học
                   <img class="icon-caret-down" src="./assets/images/icon/icon-dropdown.svg" />
                 </a>
-                <div class="dropdown-menu rounded-0">
+                <div class="monkey-dropdown-menu">
                   <a class="dropdown-item" href="#">
                     Học Monkey Junior</a>
                   <a class="dropdown-item" href="#">
@@ -66,7 +66,7 @@
               <a class="nav-link distance-center">Học viên tiêu biểu
                   <img class="icon-caret-down" src="./assets/images/icon/icon-dropdown.svg" />
                 </a>
-                <div class="dropdown-menu rounded-0">
+                <div class="monkey-dropdown-menu">
                   <a class="dropdown-item" href="#">
                     Học viên tiêu biểu</a>
                   <a class="dropdown-item" href="#">
@@ -84,9 +84,8 @@
                   <img class="icon-caret-down" src="./assets/images/icon/icon-dropdown.svg" />
               </a>
                   
-                <div class="dropdown-menu rounded-0">
-                  <a class="dropdown-item" href="#">
-                    Học liệu </a>
+                <div class="monkey-dropdown-menu">
+                  <a class="dropdown-item" href="#"> Học liệu </a>
                   <a class="dropdown-item" href="#">
                     Ba mẹ cần biết</a>
                     <a class="dropdown-item" href="#">
@@ -99,7 +98,7 @@
                       <img class="icon-caret-down" src="./assets/images/icon/icon-dropdown.svg" />
                     </a>
                   
-                <div class="dropdown-menu rounded-0">
+                <div class="monkey-dropdown-menu">
                   <a class="dropdown-item" href="#">
                     Học liệu </a>
                   <a class="dropdown-item" href="#">
@@ -277,44 +276,7 @@
                 </div>
               </div>
             </div>
-
               <div class="registration-wrapper p-3 monkey-bg-red d-flex monkey-mt-20 monkey-mb-45">
-                <!-- <div class="monkey-color-white monkey-f-bold monkey-fz-20 col-3">
-                  Ba mẹ muốn nghe tư vấn về ứng dụng học tập giúp con phát triển tiếng Anh miễn phí? Vui lòng điền thông tin của ba mẹ dưới đây.
-                </div>
-                <div class="col-9">
-                  <form class="form-registration">
-                    <div class="monkey-bg-white form-registration-body">
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text monkey-bg-transparent rounded-0"><img src="./assets/images/icon/icon-form/icon-name.svg" alt="#"></div>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Họ tên">
-                      </div>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text monkey-bg-transparent rounded-0"><img src="./assets/images/icon/icon-form/icon-phone.svg" alt="#"></div>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Điện thoại">
-                      </div>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text monkey-bg-transparent rounded-0"><img class="icon-email" src="./assets/images/icon/icon-form/icon-email.svg" alt="#"></div>
-                        </div>
-                        <input type="email" class="form-control" placeholder="Email">
-                      </div>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text monkey-bg-transparent rounded-0"><img src="./assets/images/icon/icon-form/icon-content.svg" alt="#"></div>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Nội dung hỗ trợ">
-                      </div>
-                      </div>
-                    <div class="text-center" style="margin-top:0.75rem">                
-                      <button class="monkey-color-white btn btn-warning rounded-pill">Đăng ký tư vẫn miễn phí</button>
-                     </div>
-                  </form>
-                </div> -->
                 <div class="media">
                   <div class="mr-3 text-justify media-title monkey-color-white monkey-f-bold monkey-fz-20">
                     Ba mẹ muốn nghe tư vấn về ứng dụng học tập giúp con phát triển tiếng Anh miễn phí? Vui lòng điền thông tin của ba mẹ dưới đây.
@@ -360,7 +322,7 @@
     </section>
     <section class="monkey-prize">
       <div class="container-fluid container-xl">
-        <div class="title text-center">
+        <div class="title text-center mt-5">
           <img class="icon-monkey-course rounded-circle" src="./assets/images/icon/icon-monkey-course.svg" alt="#"/>
           <span class="ml-2 monkey-f-header monkey-fz-30 monkey-color-red text-uppercase align-middle"> Các giải thưởng của monkey</span>
         </div>
@@ -412,7 +374,8 @@
                     </p>
                 </div> 
               </div>
-          </div>          </div>
+          </div>          
+        </div>
             
           </div>
         </div>
@@ -502,27 +465,27 @@
         <div class="row justify-content-center">
           <div class="col-lg-11">
             <div class="typical-students-body">
-              <div class="mb-4 typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
+              <div class="typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
                 <div class="monkey-color-white p-3">Bé Quang Bình - 6 tuổi
                   Học viên Monkey Junior</div>
                   <img class="icon-play cursor"src="./assets/images/icon/icon-play.svg" alt="#" />
               </div>
-              <div class="mb-4 typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
+              <div class="typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
                 <div class="monkey-color-white p-3">Bé Quang Bình - 6 tuổi
                   Học viên Monkey Junior</div>
                   <img class="icon-play cursor" src="./assets/images/icon/icon-play.svg" alt="#" />
               </div>
-              <div class="mb-4 typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
+              <div class="typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
                 <div class="monkey-color-white p-3">Bé Quang Bình - 6 tuổi
                   Học viên Monkey Junior</div>
                   <img class="icon-play cursor" src="./assets/images/icon/icon-play.svg" alt="#" />
               </div>
-              <div class="mb-4 typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
+              <div class="typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
                 <div class="monkey-color-white p-3">Bé Quang Bình - 6 tuổi
                   Học viên Monkey Junior</div>
                   <img class="icon-play cursor" src="./assets/images/icon/icon-play.svg" alt="#" />
               </div>
-              <div class="mb-4 typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
+              <div class="typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
                 <div class="monkey-color-white p-3">Bé Quang Bình - 6 tuổi
                   Học viên Monkey Junior</div>
                   <img class="icon-play cursor" src="./assets/images/icon/icon-play.svg" alt="#" />

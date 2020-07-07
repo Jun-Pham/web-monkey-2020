@@ -8,8 +8,6 @@ function onToggleDropdown(e){
   e.stopPropagation();
   if (this.classList.contains("active")) {
     this.classList.remove("active");
-  } else if (this.parentElement.parentElement.classList.contains("active")) {
-    this.classList.add("active");
   } else {
     for (i = 0; i < listMonkeyNavItem.length; i++) {
       listMonkeyNavItem[i].classList.remove("active");
