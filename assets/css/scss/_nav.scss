@@ -70,14 +70,14 @@
     &.active {
       .nav-link{
         color: $red;
+        .icon-caret-down {
+          transform: rotate(180deg);
+          top: 45%;
+        }
       }
       &::before {
         left: 0;
         right: 0;
-      }
-      .icon-caret-down {
-        transform: rotate(180deg);
-        top: 45%;
       }
       .dropdown-menu {
         display: block;
@@ -88,9 +88,6 @@
       height: 100%;
       font-family: $MonkeyMedium;
       color: $light-black;
-      &:hover {
-        color: $light-black;
-      }
       .icon-caret-down {
         width: 10px;
         height: 9px;
