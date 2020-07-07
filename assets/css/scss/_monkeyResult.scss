@@ -1,10 +1,23 @@
-.monkey-result {
-}
 .card-result {
   .card-result-header {
     img {
       width: 2.96875rem;
       height: 2.96875rem;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .monkey-result {
+    background-color: $red;
+    border-radius: 1.25rem;
+    .monkey-color-red,
+    .monkey-color-green,
+    .monkey-color-blue,
+    .monkey-color-violet,
+    .monkey-color-sunshine,
+    .card-result-body {
+      color: $white !important;
     }
   }
 }

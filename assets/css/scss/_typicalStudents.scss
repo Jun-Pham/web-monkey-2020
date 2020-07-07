@@ -8,6 +8,16 @@
     grid-gap: 1.5rem;
     height: 400px;
     .typical-students-video {
+      border-radius: 0.625rem;
+      position: relative;
+      .icon-play{
+        width: 3.25rem;
+        height: 3.25rem;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%) ;
+      }
       &:nth-child(2) {
         grid-column: 2 / 4;
         grid-row: 1 / 4;
@@ -26,6 +36,4 @@
     }
   }
 }
-.typical-students-video {
-  width: auto;
-}
+

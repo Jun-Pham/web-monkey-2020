@@ -16,18 +16,18 @@
 </head>
 
 <body>
-  <header class="monkey-header">
-    <section class="monkey-bg-white fixed-top">
+  <header class="monkey-header monkey-bg-light-gray">
+    <section class="monkey-bg-white fixed-top monkey-nav-wrapper">
       <div class="container-fluid container-xl" >
-        <nav class="navbar navbar-expand-xl navbar-light p-0 monkey-nav">
+        <nav class="navbar navbar-expand-lg navbar-light p-0 monkey-nav">
           <span class="toggler-icon">
             <span class="hamburger"></span>
           </span>
-          <a class="p-0" href="#"><img class="logo" src="./assets/images/logo/logo.svg" alt="#" /></a>
+          <a class="p-0 m-auto" href="#"><img class="logo" src="./assets/images/logo/logo.svg" alt="#" /></a>
+          <!-- <a class="p-0 m-auto" href="#"><img class="logo" src="./assets/images/logo/logo-mobile.svg" alt="#" /></a> -->
           <div class="monkey-collapse">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item monkey-nav-item pr-4" 
-              id="dropdown-product" 
               >
               <a class="nav-link distance-center">Sản phẩm
                   <img class="icon-caret-down" src="./assets/images/icon/icon-dropdown.svg" />
@@ -45,7 +45,6 @@
                 </div>
               </li>
               <li class="nav-item monkey-nav-item pr-4" 
-              id="dropdown-product" 
               >
               <a class="nav-link distance-center">Hướng dẫn học
                   <img class="icon-caret-down" src="./assets/images/icon/icon-dropdown.svg" />
@@ -63,7 +62,6 @@
                 </div>
               </li>
               <li class="nav-item monkey-nav-item pr-4 "
-              id='typical-students' 
               >
               <a class="nav-link distance-center">Học viên tiêu biểu
                   <img class="icon-caret-down" src="./assets/images/icon/icon-dropdown.svg" />
@@ -80,7 +78,6 @@
                 </div>
               </li>
               <li class="nav-item monkey-nav-item pr-4 "
-              id='course-ware' 
               >
               <a class="nav-link distance-center">Học liệu
                 
@@ -97,7 +94,6 @@
                 </div>
               </li>
               <li class="nav-item monkey-nav-item pr-4 "
-              id='news' 
               >
                   <a class="nav-link distance-center">Tin tức
                       <img class="icon-caret-down" src="./assets/images/icon/icon-dropdown.svg" />
@@ -145,7 +141,7 @@
     </section>
   </header>
   <main>
-    <section class="monkey-course">
+    <section class="monkey-course monkey-bg-light-gray">
       <div class="container-fluid container-xl">
         <div class="row justify-content-center">
           <div class="title text-center">
@@ -185,7 +181,7 @@
                 </div>
               </div>
               <div class="col-lg-3">
-                <div class="card monkey-mt-30 monkey-bg-pink text-center">
+                <div class="card monkey-mt-30 monkey-bg-violet text-center">
                   <div class="pt-3 pb-3">
                     <img class="card-img-top m-auto" src="./assets/images/icon/icon-course.svg" alt="Card image cap">
                   </div>
@@ -199,9 +195,10 @@
         </div>
       </div>
     </section>
-    <div class="monkey-mt-45 monkey-mb-45 monkey-line">
+    <div class="monkey-pt-45 monkey-pb-45 monkey-bg-light-gray d-lg-block d-none">
+      <div class="monkey-line"></div>
     </div>
-    <section class="course-ware background-style">
+    <section class="course-ware background-style monkey-bg-light-gray d-lg-block d-none">
       <div class="container-fluid container-xl">
         <div class="row justify-content-center">
           <div class="col-lg-11">
@@ -388,17 +385,18 @@
     <section class="monkey-result">
       <div class="container-fluid container-xl">
         <div class="title text-center mb-5">
-          <img class="icon-monkey-course rounded-circle" src="./assets/images/icon/monkey-result-5.svg" alt="#"/>
+          <img class="icon-monkey-course rounded-circle d-none d-lg-block" src="./assets/images/icon/monkey-result-5.svg" alt="#"/>
+          <img class="icon-monkey-course rounded-circle d-inline-block d-lg-none" src="./assets/images/icon/monkey-result-6.svg" alt="#"/>
           <span class="ml-2 monkey-f-header monkey-fz-30 monkey-color-red text-uppercase align-middle"> Những con số biết nói</span>
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-11">
             <div class="row">
-              <div class="col-md-6 col-lg-3">
-                <div class="card-result">
+              <div class="col-6 col-lg-3">
+                <div class="card-result mb-4">
                   <div class="card-result-header">
                     <ul class="list-inline monkey-color-green">
-                      <li class="list-inline-item">
+                      <li class="list-inline-item mb-3 mb-lg-3 d-block d-lg-inline-block">
                         <img class="rounded-circle" src="./assets/images/icon/monkey-result-1.svg" alt="#"/>
                       </li>
                       <li class="list-inline-item monkey-fz-25 text-uppercase monkey-f-header align-middle">số 1</li>
@@ -409,11 +407,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="card-result">
+              <div class="col-6 col-lg-3">
+                <div class="card-result mb-4">
                   <div class="card-result-header">
                     <ul class="list-inline monkey-color-sunshine">
-                      <li class="list-inline-item">
+                      <li class="list-inline-item mb-3 mb-lg-3 d-block d-lg-inline-block">
                         <img class="rounded-circle" src="./assets/images/icon/monkey-result-2.svg" alt="#"/>
                       </li>
                       <li class="list-inline-item monkey-fz-25 text-uppercase monkey-f-header align-middle">số 1</li>
@@ -424,11 +422,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="card-result">
+              <div class="col-6 col-lg-3">
+                <div class="card-result mb-4">
                   <div class="card-result-header">
                     <ul class="list-inline monkey-color-blue">
-                      <li class="list-inline-item">
+                      <li class="list-inline-item mb-3 mb-lg-3 d-block d-lg-inline-block">
                         <img class="rounded-circle" src="./assets/images/icon/monkey-result-3.svg" alt="#"/>
                       </li>
                       <li class="list-inline-item monkey-fz-25 text-uppercase monkey-f-header align-middle">số 1</li>
@@ -439,11 +437,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="card-result">
+              <div class="col-6 col-lg-3">
+                <div class="card-result mb-4">
                   <div class="card-result-header">
-                    <ul class="list-inline monkey-color-pink">
-                      <li class="list-inline-item">
+                    <ul class="list-inline monkey-color-violet">
+                      <li class="list-inline-item mb-3 mb-lg-3 d-block d-lg-inline-block">
                         <img class="rounded-circle" src="./assets/images/icon/monkey-result-4.svg" alt="#"/>
                       </li>
                       <li class="list-inline-item monkey-fz-25 text-uppercase monkey-f-header align-middle">số 1</li>
@@ -459,6 +457,7 @@
         </div>
       </div>
     </section>
+    
     <section class="typical-students background-style">
       <div class="container-fluid container-xl">
         <div class="title text-center mb-5">
@@ -466,31 +465,98 @@
           <span class="ml-2 monkey-f-header monkey-fz-30 monkey-color-red text-uppercase align-middle"> Học viên tiêu biểu</span>
         </div>
         <div class="row justify-content-center">
-          <div class="typical-students-body">
-            <div class="mb-4 typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
-              <div class="monkey-color-white p-3">Bé Quang Bình - 6 tuổi
-                Học viên Monkey Junior</div>
-            </div>
-            <div class="mb-4 typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
-              <div class="monkey-color-white p-3">Bé Quang Bình - 6 tuổi
-                Học viên Monkey Junior</div>
-            </div>
-            <div class="mb-4 typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
-              <div class="monkey-color-white p-3">Bé Quang Bình - 6 tuổi
-                Học viên Monkey Junior</div>
-            </div>
-            <div class="mb-4 typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
-              <div class="monkey-color-white p-3">Bé Quang Bình - 6 tuổi
-                Học viên Monkey Junior</div>
-            </div>
-            <div class="mb-4 typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
-              <div class="monkey-color-white p-3">Bé Quang Bình - 6 tuổi
-                Học viên Monkey Junior</div>
-            </div>
-          </div>
+          <div class="col-lg-11">
+            <div class="typical-students-body">
+              <div class="mb-4 typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
+                <div class="monkey-color-white p-3">Bé Quang Bình - 6 tuổi
+                  Học viên Monkey Junior</div>
+                  <img class="icon-play cursor"src="./assets/images/icon/icon-play.svg" alt="#" />
+              </div>
+              <div class="mb-4 typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
+                <div class="monkey-color-white p-3">Bé Quang Bình - 6 tuổi
+                  Học viên Monkey Junior</div>
+                  <img class="icon-play cursor" src="./assets/images/icon/icon-play.svg" alt="#" />
+              </div>
+              <div class="mb-4 typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
+                <div class="monkey-color-white p-3">Bé Quang Bình - 6 tuổi
+                  Học viên Monkey Junior</div>
+                  <img class="icon-play cursor" src="./assets/images/icon/icon-play.svg" alt="#" />
+              </div>
+              <div class="mb-4 typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
+                <div class="monkey-color-white p-3">Bé Quang Bình - 6 tuổi
+                  Học viên Monkey Junior</div>
+                  <img class="icon-play cursor" src="./assets/images/icon/icon-play.svg" alt="#" />
+              </div>
+              <div class="mb-4 typical-students-video background-style d-flex justify-content-center align-items-end" style="background-image: url(./assets/images/img/img-parents-share-1.png);">
+                <div class="monkey-color-white p-3">Bé Quang Bình - 6 tuổi
+                  Học viên Monkey Junior</div>
+                  <img class="icon-play cursor" src="./assets/images/icon/icon-play.svg" alt="#" />
+              </div>
+            </div>          </div>
+          
         </div>
       </div>
      
+    </section>
+    <section class="monkey-prize">
+      <div class="container-fluid container-xl">
+        <div class="title text-center">
+          <img class="icon-monkey-course rounded-circle" src="./assets/images/icon/icon-monkey-course.svg" alt="#"/>
+          <span class="ml-2 monkey-f-header monkey-fz-30 monkey-color-red text-uppercase align-middle"> Baó chí nói về monkey</span>
+        </div>
+        <div class="monkey-prize-body monkey-mt-45 monkey-mb-45">
+        <div class="row justify-content-center">
+          <div class="col-lg-11">
+            <div class="owl-carousel owl-theme">
+              <div class="card monkey-prize-item monkey-bg-transparent border-0">
+                <div class="card-image monkey-bc-light-yellow monkey-bg-white">
+                  <img class="card-img-top" src="./assets/images/img/monkey-prize-1.png" alt="Card image cap">
+                </div>
+                <div class="card-body pl-0 pr-0">
+                  <p class="card-text monkey-f-medium text-justify">
+                    Ứng dụng duy nhất đạt Giải Nhất Sáng kiến Toàn cầu
+                     Mỹ tại Thung lũng Silicon do Tổng thống Mỹ Barack Obama trao tặng 
+                    </p>
+                </div> 
+              </div>
+              <div class="card monkey-prize-item monkey-bg-transparent border-0">
+                <div class="card-image monkey-bc-light-yellow monkey-bg-white">
+                  <img class="card-img-top" src="./assets/images/img/monkey-prize-2.png" alt="Card image cap">
+                </div>
+                <div class="card-body pl-0 pr-0">
+                  <p class="card-text monkey-f-medium text-justify">
+                    Ứng dụng duy nhất đạt Giải Nhất Sáng kiến Toàn cầu
+                     Mỹ tại Thung lũng Silicon do Tổng thống Mỹ Barack Obama trao tặng 
+                    </p>
+                </div> 
+              </div>
+              <div class="card monkey-prize-item monkey-bg-transparent border-0">
+                <div class="card-image monkey-bc-light-yellow monkey-bg-white">
+                  <img class="card-img-top" src="./assets/images/img/monkey-prize-3.png" alt="Card image cap">
+                </div>
+                <div class="card-body pl-0 pr-0">
+                  <p class="card-text monkey-f-medium text-justify">
+                    Ứng dụng duy nhất đạt Giải Nhất Sáng kiến Toàn cầu
+                     Mỹ tại Thung lũng Silicon do Tổng thống Mỹ Barack Obama trao tặng 
+                    </p>
+                </div> 
+              </div>
+              <div class="card monkey-prize-item monkey-bg-transparent border-0">
+                <div class="card-image monkey-bc-light-yellow monkey-bg-white">
+                  <img class="card-img-top" src="./assets/images/img/monkey-prize-2.png" alt="Card image cap">
+                </div>
+                <div class="card-body pl-0 pr-0">
+                  <p class="card-text monkey-f-medium text-justify">
+                    Ứng dụng duy nhất đạt Giải Nhất Sáng kiến Toàn cầu
+                     Mỹ tại Thung lũng Silicon do Tổng thống Mỹ Barack Obama trao tặng 
+                    </p>
+                </div> 
+              </div>
+          </div>          </div>
+            
+          </div>
+        </div>
+      </div>
     </section>
     <section class="parents-share background-style">
       <div class="container-fluid container-xl">
@@ -544,78 +610,81 @@
     </section>
   </main>
   <footer>
-    <div class="monkey-bg-red text-center monkey-pt-20 monkey-pb-20 text-uppercase monkey-color-white monkey-fz-30 monkey-f-header">
+    <div class="monkey-bg-red title text-center monkey-pt-20 monkey-pb-20 text-uppercase monkey-color-white monkey-fz-30 monkey-f-header">
       liên hệ
     </div>
     <div class="footer-body monkey-bg-light-red monkey-pt-25 monkey-pb-25">
       <div class="container-fluid container-xl">
         <div class="contact-content text-center">
-          <ul class="list-inline">
-            <li class="list-inline-item monkey-color-white monkey-f-bold">Hotline: 1900 636052</li>
-            <li class="list-inline-item monkey-color-white monkey-f-bold">monkeyxinchao@monkey.edu.vn</li>
-            <li class="list-inline-item ml-4">
-              <ul class="list-inline">
-                <li class="list-inline-item cursor"><img class="rounded-circle" src="./assets/images/icon/icon-face.svg" alt="#"/></li>
-                <li class="list-inline-item cursor"><img class="rounded-circle" src="./assets/images/icon/icon-share.svg" alt="#"/></li>
-                <li class="list-inline-item cursor"><img class="rounded-circle" src="./assets/images/icon/icon-youtube.svg" alt="#"/></li>
-              </ul>
+          <ul class="list-inline monkey-color-white ">
+            <li class="list-inline-item border-line monkey-f-bold text-left mb-2">
+              Hotline: 1900 636052
             </li>
+            <li class="list-inline-item d-lg-none d-block monkey-fz-12 monkey-f-regular text-left mb-2">              
+             [ 7:00 - 22:00 các ngày trong tuần ]
+            </li>
+            <li class="list-inline-item monkey-f-bold">monkeyxinchao@monkey.edu.vn</li>
+          </ul>
+          <ul class="list-inline">
+            <li class="list-inline-item cursor"><img class="rounded-circle" src="./assets/images/icon/icon-face.svg" alt="#"/></li>
+            <li class="list-inline-item cursor"><img class="rounded-circle" src="./assets/images/icon/icon-share.svg" alt="#"/></li>
+            <li class="list-inline-item cursor"><img class="rounded-circle" src="./assets/images/icon/icon-youtube.svg" alt="#"/></li>
+          </ul>
         </div>
-        <div class="justify-content-center d-flex">
-          <div class="pl-3 pr-3 monkey-color-white text-center">
-            <span class=mr-2>&#9679;</span>Đăng ký đại lý
-          </div>
-          <div class="pl-3 pr-3 monkey-color-white text-center">
-            <span class=mr-2>&#9679;</span>Tuyển dụng
-          </div>
-          <div class="pl-3 pr-3 monkey-color-white text-center">
-            <span class=mr-2>&#9679;</span>Tải app
-          </div>
-          <div class="pl-3 pr-3 monkey-color-white text-center">
-            <span class=mr-2>&#9679;</span>Sitemap
-          </div>
-          <div class="pl-3 pr-3 monkey-color-white text-center">
-            <span class=mr-2>&#9679;</span>Chính sách bảo mật
-          </div>
-          <div class="pl-3 pr-3 monkey-color-white text-center">
-            <span class=mr-2>&#9679;</span>Đieu khoan su dung
-          </div>
+        <div class="monkey-f-bold footer-item monkey-color-white d-block d-lg-flex">
+          <p class="mr-lg-3 ml-ld-3"><span class=mr-2>&#9679;</span>Đăng ký đại lý</p>
+          <p class="mr-lg-3 ml-ld-3"><span class=mr-2>&#9679;</span>Tuyển dụng</p>
+          <p class="mr-lg-3 ml-ld-3"><span class=mr-1>&#9679;</span>Tải app</p>
+          <p class="mr-lg-3 ml-ld-3"> <span class=mr-2>&#9679;</span>Sitemap</p>
+          <p class="mr-lg-3 ml-ld-3"><span class=mr-2>&#9679;</span>Chính sách bảo mật</p>
+          <p class="mr-lg-3 ml-ld-3"><span class=mr-3>&#9679;</span>Điều khoản sử dụng</p>
+          <img class="img-certification d-block d-lg-none" src="./assets/images/img/img-certification.png" alt="#" />
+        </div>
+      <div class="address-content monkey-pt-20 monkey-pb-20 mt-3 mb-3">
+        <div class="row justify-content-center">
+          <div class="col-lg-11">
+            <div class="row justify-content-end">
+              <div class="col-lg-9 monkey-f-regular monkey-color-white text-center">
+                <p class="monkey-fz-12">© 2020 - Bản quyền của Công Ty Cổ phần Early Start
+                </p>
+                <p class="monkey-fz-12">Trụ sở chính: Tầng 12 Tòa nhà Zen Tower, Số 12 Khuất Duy Tiến, P. Thanh Xuân Trung, Quận Thanh Xuân, TP. Hà Nội 
+                </p>
+                <p class="monkey-fz-12">Giấy phép DKKD số 0106651756 do Sở Kế hoạch và Đầu tư TP Hà Nội cấp.  Ngày cấp: 01/10/2014
+                </p>
+              </div>
+              <div class="col-lg-2 d-lg-block d-none">
+                <img class="img-certification" src="./assets/images/img/img-certification.png" alt="#" />
+              </div>
+            </div>
+        </div>
+      </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-11">
-          <div class="text-center address-content monkey-pt-20 monkey-pb-20 mt-3 mb-3 monkey-f-regular monkey-color-white">
-            <p class="monkey-fz-12">© 2020 - Bản quyền của Công Ty Cổ phần Early Start
-            </p>
-            <p class="monkey-fz-12">Trụ sở chính: Tầng 12 Tòa nhà Zen Tower, Số 12 Khuất Duy Tiến, P. Thanh Xuân Trung, Quận Thanh Xuân, TP. Hà Nội 
-            </p>
-            <p class="monkey-fz-12">Giấy phép DKKD số 0106651756 do Sở Kế hoạch và Đầu tư TP Hà Nội cấp.  Ngày cấp: 01/10/2014
-            </p>
-            <img class="img-certification" src="./assets/images/img/img-certification.png" alt="#" />
-            </div>
-            <div class="seo-body text-center monkey-color-white monkey-fz-12">
-              <ul class="list-inline">
-                <li class="list-inline-item">hoc tieng anh</li>
-                <li class="list-inline-item">học toán</li>
-                <li class="list-inline-item">hoc tieng anh</li>
-                <li class="list-inline-item">học toán</li>
-                <li class="list-inline-item">hoc tieng anh</li>
-                <li class="list-inline-item">học toán</li>
-                <li class="list-inline-item">hoc tieng anh</li>
-                <li class="list-inline-item">học toán</li>
-                <li class="list-inline-item">hoc tieng anh</li>
-                <li class="list-inline-item">học toán</li>
-                <li class="list-inline-item">hoc tieng anh</li>
-                <li class="list-inline-item">học toán</li>
-                <li class="list-inline-item">hoc tieng anh</li>
-                <li class="list-inline-item">học toán</li>
-                <li class="list-inline-item">hoc tieng anh</li>
-                <li class="list-inline-item">học toán</li>
-                <li class="list-inline-item">hoc tieng anh</li>
-                <li class="list-inline-item">học toán</li>
-              </ul>
-            </div>
-        </div>
+          <div class="seo-body text-center monkey-color-white">
+            <ul class="list-inline monkey-f-regular monkey-fz-12">
+              <li class="list-inline-item">hoc tieng anh</li>
+              <li class="list-inline-item">học toán</li>
+              <li class="list-inline-item">hoc tieng anh</li>
+              <li class="list-inline-item">học toán</li>
+              <li class="list-inline-item">hoc tieng anh</li>
+              <li class="list-inline-item">học toán</li>
+              <li class="list-inline-item">hoc tieng anh</li>
+              <li class="list-inline-item">học toán</li>
+              <li class="list-inline-item">hoc tieng anh</li>
+              <li class="list-inline-item">học toán</li>
+              <li class="list-inline-item">hoc tieng anh</li>
+              <li class="list-inline-item">học toán</li>
+              <li class="list-inline-item">hoc tieng anh</li>
+              <li class="list-inline-item">học toán</li>
+              <li class="list-inline-item">hoc tieng anh</li>
+              <li class="list-inline-item">học toán</li>
+              <li class="list-inline-item">hoc tieng anh</li>
+              <li class="list-inline-item">học toán</li>
+            </ul>
+          </div>
       </div>
+     
       </div>
     </div>
   </footer>

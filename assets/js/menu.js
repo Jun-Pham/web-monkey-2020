@@ -1,32 +1,3 @@
-// const dataId = []
-// onHoverDropdown = (id)=> {
-//   dataId.push(id)
-//   const newData = [...new Set(dataId)]
-//   const eleId = document.getElementById(id);
-//   const eleClass = document.querySelectorAll(".monkey-nav-item");
-//   for (let i = 0; i < eleClass.length; i++) {
-//     eleClass[i].classList.remove("active");
-//   }
-//   for(let i=0; i<= newData.length;i++){
-//     if(newData[i] === id){
-//       eleId.classList.toggle("active");
-//     }
-//   }
-// }
-
-// window.onmouseout = function(event) {
-//   if (!event.target.matches('.dropdown-menu')) {
-//     var dropdowns = document.getElementsByClassName("monkey-nav-item");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('active')) {
-//         openDropdown.classList.remove('active');
-//       }
-//     }
-//   }
-// }
-
 const listMonkeyNavItem = document.querySelectorAll(".monkey-nav-item");
 
 for (i = 0; i < listMonkeyNavItem.length; i++) {

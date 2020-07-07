@@ -7,15 +7,15 @@
   font-size: $number;
 }
 
-// html {
-//   @include font-style(11.5px);
-// }
+html {
+  @include font-style(16px);
+}
 
-// @media (max-width: 1024px) {
-//   html {
-//     @include font-style(15px);
-//   }
-// }
+@media (max-width: 1140px) {
+  html {
+    @include font-style(14px);
+  }
+}
 // @media (max-width: 991px) {
 //   html {
 //     @include font-style(12px);
@@ -38,13 +38,16 @@ body {
   color: $gray;
   font-family: "Monkey-medium";
   line-height: 1.2;
-  background-color: $light-gray;
+  background-color: $white;
   padding-right: 0 !important ;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .parents-share,.monkey-result,.typical-students {
   padding-top: 2.3125rem;
   padding-bottom: 2.3125rem;;
 
+}
+@media(max-width(1199px)){
+  
 }
