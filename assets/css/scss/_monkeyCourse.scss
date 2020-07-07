@@ -16,7 +16,7 @@
 }
 
 .course-ware {
-    background-image: url(../images/banner/bg-course.svg);
+  background-image: url(../images/banner/bg-course.svg);
   .card-img-top {
     height: 8.8125rem;
     width: auto;
@@ -24,6 +24,35 @@
 }
 
 .icon-monkey-course {
-    width: 3rem;
-    height: 3rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (max-width: 991px) {
+  .monkey-course {
+    .card-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+      .card {
+        border-radius: 1.625rem;
+        &.monkey-bg-green {
+          box-shadow: 0 5px #92c83e;
+          border-color: #92c83e;
+        }
+        &.monkey-bg-blue {
+          box-shadow: 0 5px #00c2f3;
+          border-color: #00c2f3;
+        }
+        &.monkey-bg-sunshine {
+          box-shadow: 0 5px #fbad18;
+          border-color: #fbad18;
+        }
+        &.monkey-bg-violet {
+          box-shadow: 0 5px #7a428d;
+          border-color: #7a428d;
+        }
+      }
+    }
   }
+}

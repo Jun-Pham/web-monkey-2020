@@ -771,6 +771,39 @@ body {
   height: 3rem;
 }
 
+@media (max-width: 991px) {
+  .monkey-course .card-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  .monkey-course .card-wrapper .card {
+    border-radius: 1.625rem;
+  }
+  .monkey-course .card-wrapper .card.monkey-bg-green {
+    -webkit-box-shadow: 0 5px #92c83e;
+            box-shadow: 0 5px #92c83e;
+    border-color: #92c83e;
+  }
+  .monkey-course .card-wrapper .card.monkey-bg-blue {
+    -webkit-box-shadow: 0 5px #00c2f3;
+            box-shadow: 0 5px #00c2f3;
+    border-color: #00c2f3;
+  }
+  .monkey-course .card-wrapper .card.monkey-bg-sunshine {
+    -webkit-box-shadow: 0 5px #fbad18;
+            box-shadow: 0 5px #fbad18;
+    border-color: #fbad18;
+  }
+  .monkey-course .card-wrapper .card.monkey-bg-violet {
+    -webkit-box-shadow: 0 5px #7a428d;
+            box-shadow: 0 5px #7a428d;
+    border-color: #7a428d;
+  }
+}
+
 .registration-wrapper {
   border-radius: 0.625rem;
 }
