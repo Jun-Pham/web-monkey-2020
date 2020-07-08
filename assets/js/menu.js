@@ -1,17 +1,16 @@
 const listMonkeyNavItem = document.querySelectorAll(".monkey-nav-item");
-for (i = 0; i < listMonkeyNavItem.length; i++) {
-  listMonkeyNavItem[i].addEventListener("click", onToggleDropdown);
-}
-function onToggleDropdown(e) {
-  e.stopPropagation();
-  if (this.classList.contains("active")) {
-    this.classList.remove("active");
-  } else {
-    for (i = 0; i < listMonkeyNavItem.length; i++) {
-      listMonkeyNavItem[i].classList.remove("active");
+for (let i = 0; i < listMonkeyNavItem.length; i++) {
+  listMonkeyNavItem[i].addEventListener("click", function(e){
+    e.stopPropagation();
+    if (this.classList.contains("active")) {
+      this.classList.remove("active");
+    } else {
+      for (let i = 0; i < listMonkeyNavItem.length; i++) {
+        listMonkeyNavItem[i].classList.remove("active");
+      }
+      this.classList.add("active");
     }
-    this.classList.add("active");
-  }
+  });
 }
 
 function onCloseDropdown() {
@@ -25,34 +24,42 @@ function onCloseDropdown() {
 
 window.onclick = (event) => {
   if (!event.target.matches(".nav-link")) {
-    onCloseDropdown(); 
+    onCloseDropdown();
   }
 };
 
 const listLanguage = document.querySelectorAll(".item-language");
 const eleIdLang = document.getElementById("icon-lang");
-for (i = 0; i < listLanguage.length; i++) {
-  listLanguage[i].addEventListener("click", onChangeLanguage);
-}
-function onChangeLanguage(e) {
-  e.stopPropagation();
-  const urlImage = this.children[0].children[0].getAttribute("src");
-  eleIdLang.src = urlImage;
-  onCloseDropdown();
-}
-
-
-const listContents = document.querySelectorAll(".content-item");
-function onShowDropdown(){
-  const elmDropdown = document.getElementById('content-dropdown-menu')
-  elmDropdown.classList.toggle('active')
-}
-for(i=0; i<listContents.length; i++){
-  listContents[i].addEventListener("click", (e) =>{
+for (let i = 0; i < listLanguage.length; i++) {
+  listLanguage[i].addEventListener("click", function(e){
     e.stopPropagation();
+    const urlImage = this.children[0].children[0].getAttribute("src");
+    eleIdLang.src = urlImage;
+    onCloseDropdown();
   });
 }
-$ ('.toggler-icon').click (function () {
-  $ ('.toggler-icon').toggleClass ('active');
-  $ ('.monkey-collapse').toggleClass ('active');
-})
+
+
+$(".toggler-icon").click(function () {
+  $(".toggler-icon").toggleClass("active");
+  $(".monkey-collapse").toggleClass("active");
+});
+
+function onShowDropdown() {
+  const elmDropdown = document.getElementById("content-dropdown-menu");
+  elmDropdown.classList.toggle("active");
+}
+
+const listContents = document.querySelectorAll(".content-item");
+for (let i = 0; i < listContents.length; i++) {
+  listContents[i].addEventListener("click", function(e){
+    e.stopPropagation();
+    e.preventDefault();
+    const innerText = this.innerText;
+    const elmInputSupportContent = document.getElementById(
+      "support-content"
+    );
+    elmInputSupportContent.value = innerText;
+    onShowDropdown()
+  }) 
+}

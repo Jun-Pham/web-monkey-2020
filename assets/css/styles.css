@@ -812,6 +812,12 @@ body {
   padding: 0.8125rem 2rem;
 }
 
+.form-control:focus {
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .monkey-banner {
   background-image: url("../images/banner/banner_home.svg");
   height: 645px;
