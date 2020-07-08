@@ -10,18 +10,6 @@
   }
 }
 
-.contact-content {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-gap: 3.3125rem;
-  grid-template-columns: auto auto;
-  img {
-    width: 2.4375rem;
-    height: 2.4375rem;
-  }
-}
-
 .footer-body {
   border-top: 2px solid $transparent;
   border-image: url(../images/icon/icon-line.svg) 30 stretch;
@@ -56,6 +44,24 @@
   }
 }
 .contact-content {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 3.3125rem;
+  grid-template-columns: auto auto;
+  img {
+    width: 2.4375rem;
+    height: 2.4375rem;
+  }
+  .list-inline {
+    position: relative;
+    .email {
+      position: absolute;
+      top: 75%;
+      left: 15px;
+    }
+  }
+
   .list-inline {
     &:first-child {
       li {

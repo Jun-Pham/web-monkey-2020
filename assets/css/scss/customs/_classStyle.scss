@@ -22,3 +22,15 @@
     margin-right: auto;
     background-color: $red;
   }
+  
+  @media (max-width: 1024px) {
+    .d-desktop {
+      display: none !important;
+    }
+  }
+  @media (min-width: 1025px) {
+    .d-mobile {
+      display: none !important;
+    }
+  }
+  
