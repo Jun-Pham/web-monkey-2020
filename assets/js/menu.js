@@ -29,10 +29,10 @@ window.onclick = (event) => {
   }
 };
 
-const listLLanguage = document.querySelectorAll(".item-language");
+const listLanguage = document.querySelectorAll(".item-language");
 const eleIdLang = document.getElementById("icon-lang");
-for (i = 0; i < listLLanguage.length; i++) {
-  listLLanguage[i].addEventListener("click", onChangeLanguage);
+for (i = 0; i < listLanguage.length; i++) {
+  listLanguage[i].addEventListener("click", onChangeLanguage);
 }
 function onChangeLanguage(e) {
   e.stopPropagation();
@@ -40,3 +40,19 @@ function onChangeLanguage(e) {
   eleIdLang.src = urlImage;
   onCloseDropdown();
 }
+
+
+const listContents = document.querySelectorAll(".content-item");
+function onShowDropdown(){
+  const elmDropdown = document.getElementById('content-dropdown-menu')
+  elmDropdown.classList.toggle('active')
+}
+for(i=0; i<listContents.length; i++){
+  listContents[i].addEventListener("click", (e) =>{
+    e.stopPropagation();
+  });
+}
+$ ('.toggler-icon').click (function () {
+  $ ('.toggler-icon').toggleClass ('active');
+  $ ('.monkey-collapse').toggleClass ('active');
+})

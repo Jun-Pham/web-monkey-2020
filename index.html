@@ -279,7 +279,7 @@
 	<div class="monkey-pt-45 monkey-pb-45 monkey-bg-light-gray d-lg-block d-none">
 		<div class="monkey-line"></div>
 	</div>
-	<section class="course-ware background-style monkey-bg-light-gray d-lg-block d-none">
+	<section class="course-ware background-style monkey-bg-light-gray d-desktop">
 		<div class="container-fluid container-xl">
 			<div class="row justify-content-center">
 				<div class="col-lg-11">
@@ -330,7 +330,7 @@
 					</div>
 					<div class="registration-wrapper p-3 monkey-bg-red d-flex monkey-mt-20 monkey-mb-45">
 						<div class="media">
-							<div class="mr-3 text-justify media-title monkey-color-white monkey-f-bold monkey-fz-20">
+							<div class="mr-3 text-justify media-title monkey-color-white monkey-f-bold monkey-fz-19">
 								Ba mẹ muốn nghe tư vấn về ứng dụng học tập giúp con phát triển tiếng Anh miễn phí? Vui
 								lòng điền thông tin của ba mẹ dưới đây.
 							</div>
@@ -368,12 +368,38 @@
 														src="./assets/images/icon/icon-form/icon-content.svg" alt="#">
 												</div>
 											</div>
-											<input type="text" class="form-control" placeholder="Nội dung hỗ trợ">
+											<input type="text" class="form-control contents" onClick ="onShowDropdown()" placeholder="Nội dung hỗ trợ">
+											<i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+											<div id="content-dropdown-menu" class="content-dropdown-menu monkey-bg-white">
+												<a class="dropdown-item content-item" href="#">
+													Bắt đầu học tiếng anh</a>
+												<a class="dropdown-item content-item" href="#">
+													Giỏi tiếng anh trước tuổi lên 10</a>
+												<a class="dropdown-item content-item" href="#">
+													Học toán theo Chương trình GDPT mới</a>
+												<a class="dropdown-item content-item" href="#">
+													Học VMonkey</a>
+												<a class="dropdown-item content-item" href="#">Học tiếng Việt theo Chương trình GDPT mới</a>
+											</div>
 										</div>
 									</div>
 									<div class="text-center" style="margin-top:0.75rem">
-										<button class="monkey-color-white btn-registration btn btn-warning rounded-pill">Đăng ký tư vẫn miễn phí
+										<button type="button" data-toggle="modal" data-target="#exampleModal" class="monkey-color-white btn-registration btn btn-warning rounded-pill monkey-fz-f17">Đăng ký tư vẫn miễn phí
 										</button>
+										  <!-- Modal -->
+										  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+											<div class="modal-dialog" role="document">
+											  <div class="modal-content">
+												<div class="modal-body">
+												  ...
+												</div>
+												<div class="modal-footer">
+												  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												  <button type="button" class="btn btn-primary">Save changes</button>
+												</div>
+											  </div>
+											</div>
+										  </div>
 									</div>
 								</form>
 							</div>
@@ -542,6 +568,9 @@
 			</div>
 		</div>
 	</section>
+	<div class="text-center mt-5">
+		<button class="btn btn-danger monkey-bg-red rounded-pill d-mobile">Đăng ký ngay</button>
+	</div>
 	<section class="typical-students background-style">
 		<div class="container-fluid container-xl">
 			<div class="title text-center mb-5">
@@ -846,12 +875,7 @@
 				}
 			}
 		})
-		$ ('.toggler-icon').click (function () {
-			$ ('.toggler-icon').toggleClass ('active');
-			$ ('.monkey-collapse').toggleClass ('active');
-		})
+		
 	})
-
-
 </script>
 </html>

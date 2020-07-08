@@ -186,12 +186,20 @@
   font-size: 0.875rem;
 }
 
+.monkey-fz-15 {
+  font-size: 0.9375rem;
+}
+
 .monkey-fz-16 {
   font-size: 1rem;
 }
 
 .monkey-fz-18 {
   font-size: 1.125rem;
+}
+
+.monkey-fz-19 {
+  font-size: 1.1875rem;
 }
 
 .monkey-fz-20 {
@@ -900,19 +908,44 @@ body {
 
 .registration-wrapper .media .media-title {
   width: 25%;
-}
-
-.form-registration .form-registration-body {
-  border-radius: 0.875rem;
-  overflow: hidden;
+  line-height: 1.6;
 }
 
 .form-registration .form-registration-body .form-control {
-  border-radius: 0;
   border-left: none;
   padding-left: 0;
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
+  font-size: 0.9375rem;
+  height: 3rem;
+}
+
+.form-registration .form-registration-body .input-group {
+  position: relative;
+  border-radius: 0.875rem;
+}
+
+.form-registration .form-registration-body .input-group .fa-angle-down {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+}
+
+.form-registration .form-registration-body .content-dropdown-menu {
+  position: absolute;
+  top: 106%;
+  width: 100%;
+  background-color: #ecebea;
+  display: none;
+}
+
+.form-registration .form-registration-body .content-dropdown-menu.active {
+  display: block;
+}
+
+.form-registration .input-group-text {
+  border-radius: 0.875rem;
 }
 
 .form-registration .input-group-text img {
