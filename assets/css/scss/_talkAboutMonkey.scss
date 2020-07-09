@@ -33,3 +33,18 @@
     }
   }
 }
+
+.talk-about-monkey-card-mobile {
+  border-radius: 0.625rem;
+  height: 4.6875rem;
+  box-shadow: 0 5px #e6e7e8;
+  border-color: #e6e7e8;
+}
+@media (max-width: 1024px) {
+  .talk-about-monkey {
+    background-color: #d1d3d4;
+    border-radius: 1.25rem;
+    padding-top: 2.875rem;
+    padding-bottom: 2.875rem;
+  }
+}
