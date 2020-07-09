@@ -52,12 +52,25 @@ body {
   font-size: 1rem;
 }
 
-.parents-share,.monkey-result,.typical-students {
+.parents-share,
+.monkey-result,
+.typical-students {
   padding-top: 2.3125rem;
 }
-.parents-share{
+.parents-share {
   padding-bottom: 2.3125rem;
 }
-@media(max-width(1199px)){
-  
+@media (max-width: 480px) {
+  footer {
+    .contact-content {
+      position: relative;
+      .list-inline {
+        &:last-child {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+  }
 }

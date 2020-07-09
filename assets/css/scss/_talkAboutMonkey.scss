@@ -3,14 +3,8 @@
   overflow: hidden;
   border: 1px solid #bcbec0;
   .card-image {
-      cursor: pointer;
-      overflow: hidden;
-      &:hover{
-          img {
-            transform: scale(1.1);
-            transition: 0.3s;
-          }
-      }
+    cursor: pointer;
+    overflow: hidden;
     img {
       border-radius: 0;
     }
@@ -18,8 +12,8 @@
   .talk-about-monkey-card-title {
     margin-bottom: 1.875rem;
     cursor: pointer;
-    &:hover{
-        color: $red;
+    &:hover {
+      color: $red;
     }
   }
   .talk-about-monkey-card-body {
@@ -30,8 +24,8 @@
     justify-content: space-between;
     align-items: center;
     .card-img-top {
-        height: 2rem;
-        width: auto;
+      height: 2rem;
+      width: auto;
       img {
         width: auto;
         height: 100%;

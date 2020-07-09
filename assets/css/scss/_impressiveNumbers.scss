@@ -1,5 +1,5 @@
-.card-result {
-  .card-result-header {
+.card-impressive-numbers {
+  .card-impressive-numbers-header {
     img {
       width: 2.96875rem;
       height: 2.96875rem;
@@ -8,7 +8,7 @@
 }
 
 @media (max-width: 991px) {
-  .monkey-result {
+  .impressive-numbers {
     background-color: $red;
     border-radius: 1.25rem;
     .monkey-color-red,
@@ -16,12 +16,12 @@
     .monkey-color-blue,
     .monkey-color-violet,
     .monkey-color-sunshine,
-    .card-result-body {
+    .card-impressive-numbers-body {
       color: $white !important;
     }
   }
-  .card-result {
-    .card-result-header {
+  .card-impressive-numbers {
+    .card-impressive-numbers-header {
       text-align: center;
     }
   }
