@@ -15,14 +15,21 @@
   .cursor{
     cursor: pointer;
   }
-  .monkey-line{
-    width: 2.4375rem;
-    height: 0.3125rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: $red;
+  .line-wrapper{
+    padding-top:1.5rem;
+    padding-bottom: 2.5rem;
+    .monkey-line{
+      width: 2.4375rem;
+      height: 0.3125rem;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: $red;
+    }
   }
   
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: $red;
+  }
   @media (max-width: 1024px) {
     .d-desktop {
       display: none !important;

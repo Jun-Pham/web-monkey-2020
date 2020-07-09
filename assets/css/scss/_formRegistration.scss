@@ -1,23 +1,40 @@
 .registration-wrapper {
   border-radius: 0.625rem;
+  box-shadow: 0 0 0 3px #e6e7e8;
   .media {
+    width: 100%;
     .media-title {
       width: 25%;
-      line-height:1.6;
+      line-height: 1.6;
     }
   }
 }
 .form-registration {
   .form-registration-body {
+    border-radius: 0.875rem;
     .form-control {
       border-left: none;
+      border-radius: 0;
       padding-left: 0;
       font-size: $f15;
       height: 3rem;
+      &:focus{
+        border-color:#ced4da;
+      }
     }
     .input-group {
-      position: relative;
-      border-radius: 0.875rem;
+      &:last-child {
+        overflow: inherit;
+        .form-control{
+            border-bottom-right-radius:0.875rem;
+        }
+        
+      }
+      &:first-child {
+        .form-control{
+            border-top-right-radius:0.875rem;
+        }  
+      }
       .fa-angle-down {
         position: absolute;
         right: 1rem;
@@ -26,24 +43,38 @@
         z-index: 99;
       }
     }
-    .content-dropdown-menu{
-        position: absolute;
-        top:106%;
-        width: 100%;
-        background-color: #ecebea;
-        display: none;
-        &.active{
-            display: block;
-        }
+    .content-dropdown-menu {
+      position: absolute;
+      top: 106%;
+      width: 100%;
+      background-color: #ecebea;
+      display: none;
+      &.active {
+        display: block;
+      }
     }
   }
   .input-group-text {
-    border-radius: 0.875rem;
     img {
       height: 0.9375rem;
     }
     .icon-email {
       height: 0.6625rem;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .registration-mobile {
+    background-image: url(../images/icon/img-registration-mobile.svg);
+    border-radius: 1.5rem;
+    .registration-wrapper {
+      background-color: $transparent;
+      box-shadow: none;
+      .form-registration-body {
+        .form-control {
+          height: 3.125rem;
+        }
+      }
     }
   }
 }

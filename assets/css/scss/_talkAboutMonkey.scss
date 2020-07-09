@@ -1,0 +1,41 @@
+.talk-about-monkey-card {
+  border-radius: 0.875rem;
+  overflow: hidden;
+  border: 1px solid #bcbec0;
+  .card-image {
+      cursor: pointer;
+      overflow: hidden;
+      &:hover{
+          img {
+            transform: scale(1.1);
+            transition: 0.3s;
+          }
+      }
+    img {
+      border-radius: 0;
+    }
+  }
+  .talk-about-monkey-card-title {
+    margin-bottom: 1.875rem;
+    cursor: pointer;
+    &:hover{
+        color: $red;
+    }
+  }
+  .talk-about-monkey-card-body {
+    padding: 1.25rem;
+  }
+  .talk-about-monkey-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .card-img-top {
+        height: 2rem;
+        width: auto;
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}

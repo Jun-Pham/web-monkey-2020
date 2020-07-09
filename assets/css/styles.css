@@ -194,6 +194,10 @@
   font-size: 1rem;
 }
 
+.monkey-fz-17 {
+  font-size: 1.0625rem;
+}
+
 .monkey-fz-18 {
   font-size: 1.125rem;
 }
@@ -428,11 +432,20 @@
   cursor: pointer;
 }
 
-.monkey-line {
+.line-wrapper {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.line-wrapper .monkey-line {
   width: 2.4375rem;
   height: 0.3125rem;
   margin-left: auto;
   margin-right: auto;
+  background-color: #ed232f;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background-color: #ed232f;
 }
 
@@ -477,6 +490,9 @@ body {
 
 .parents-share, .monkey-result, .typical-students {
   padding-top: 2.3125rem;
+}
+
+.parents-share {
   padding-bottom: 2.3125rem;
 }
 
@@ -595,8 +611,7 @@ body {
 }
 
 .monkey-nav .monkey-collapse .navbar-nav .monkey-dropdown-menu .dropdown-item:hover {
-  background-color: #00c2f3;
-  color: #fff;
+  color: #ed232f;
 }
 
 .monkey-nav .monkey-collapse .monkey-nav-item {
@@ -624,21 +639,21 @@ body {
   transition-timing-function: ease-out;
 }
 
-.monkey-nav .monkey-collapse .monkey-nav-item.active .nav-link {
+.monkey-nav .monkey-collapse .monkey-nav-item.active .nav-link, .monkey-nav .monkey-collapse .monkey-nav-item:hover .nav-link {
   color: #ed232f;
 }
 
-.monkey-nav .monkey-collapse .monkey-nav-item.active .nav-link .icon-caret-down .fa-angle-down {
+.monkey-nav .monkey-collapse .monkey-nav-item.active .nav-link .icon-caret-down .fa-angle-down, .monkey-nav .monkey-collapse .monkey-nav-item:hover .nav-link .icon-caret-down .fa-angle-down {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.monkey-nav .monkey-collapse .monkey-nav-item.active::before {
+.monkey-nav .monkey-collapse .monkey-nav-item.active::before, .monkey-nav .monkey-collapse .monkey-nav-item:hover::before {
   left: 0;
   right: 0;
 }
 
-.monkey-nav .monkey-collapse .monkey-nav-item.active .monkey-dropdown-menu {
+.monkey-nav .monkey-collapse .monkey-nav-item.active .monkey-dropdown-menu, .monkey-nav .monkey-collapse .monkey-nav-item:hover .monkey-dropdown-menu {
   opacity: 1;
   height: auto;
   -webkit-transform: scaleY(1);
@@ -818,6 +833,15 @@ body {
           box-shadow: none;
 }
 
+.btn-registration-mobile {
+  height: 2.875rem;
+  width: 11.1875rem;
+  font-size: 1.0625rem;
+  font-family: "Monkey-bold";
+  background-color: #ed232f;
+  color: #fff;
+}
+
 .monkey-banner {
   background-image: url("../images/banner/banner_home.svg");
   height: 645px;
@@ -841,9 +865,9 @@ body {
   height: 78px;
 }
 
-.monkey-course {
+.monkey-course .title {
   padding-top: 3.3125rem;
-  padding-bottom: 3.3125rem;
+  padding-bottom: 1.875rem;
 }
 
 .monkey-course .card {
@@ -865,6 +889,10 @@ body {
   background-image: url(../images/banner/bg-course.svg);
 }
 
+.course-ware .card {
+  margin-top: 2.5rem;
+}
+
 .course-ware .card-img-top {
   height: 8.8125rem;
   width: auto;
@@ -876,12 +904,20 @@ body {
 }
 
 @media (max-width: 991px) {
+  .course-ware.monkey-bg-light-gray {
+    background-color: #fff;
+  }
+  .monkey-course.monkey-bg-light-gray {
+    background-color: #fff;
+  }
   .monkey-course .card-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
+    margin-top: 1.5rem;
+    border-bottom: 1px solid #e6e7e8;
   }
   .monkey-course .card-wrapper .card {
     border-radius: 1.625rem;
@@ -908,8 +944,20 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .monkey-course .card-wrapper.v-monkey {
+    border-bottom-color: transparent;
+  }
+}
+
 .registration-wrapper {
   border-radius: 0.625rem;
+  -webkit-box-shadow: 0 0 0 3px #e6e7e8;
+          box-shadow: 0 0 0 3px #e6e7e8;
+}
+
+.registration-wrapper .media {
+  width: 100%;
 }
 
 .registration-wrapper .media .media-title {
@@ -917,16 +965,32 @@ body {
   line-height: 1.6;
 }
 
+.form-registration .form-registration-body {
+  border-radius: 0.875rem;
+}
+
 .form-registration .form-registration-body .form-control {
   border-left: none;
+  border-radius: 0;
   padding-left: 0;
   font-size: 0.9375rem;
   height: 3rem;
 }
 
-.form-registration .form-registration-body .input-group {
-  position: relative;
-  border-radius: 0.875rem;
+.form-registration .form-registration-body .form-control:focus {
+  border-color: #ced4da;
+}
+
+.form-registration .form-registration-body .input-group:last-child {
+  overflow: inherit;
+}
+
+.form-registration .form-registration-body .input-group:last-child .form-control {
+  border-bottom-right-radius: 0.875rem;
+}
+
+.form-registration .form-registration-body .input-group:first-child .form-control {
+  border-top-right-radius: 0.875rem;
 }
 
 .form-registration .form-registration-body .input-group .fa-angle-down {
@@ -950,16 +1014,27 @@ body {
   display: block;
 }
 
-.form-registration .input-group-text {
-  border-radius: 0.875rem;
-}
-
 .form-registration .input-group-text img {
   height: 0.9375rem;
 }
 
 .form-registration .input-group-text .icon-email {
   height: 0.6625rem;
+}
+
+@media (max-width: 1024px) {
+  .registration-mobile {
+    background-image: url(../images/icon/img-registration-mobile.svg);
+    border-radius: 1.5rem;
+  }
+  .registration-mobile .registration-wrapper {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .registration-mobile .registration-wrapper .form-registration-body .form-control {
+    height: 3.125rem;
+  }
 }
 
 .monkey-prize-item .card-image {
@@ -975,6 +1050,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #fdbe25;
+  border-radius: 0.625rem;
 }
 
 .monkey-prize-item .card-image img {
@@ -1104,6 +1180,17 @@ body {
   background-image: url(../images/banner/bg-parents-share.svg);
 }
 
+@media (max-width: 1024px) {
+  .parents-share {
+    background-color: #ed232f;
+    border-radius: 1.5rem;
+    background-image: none;
+  }
+  .parents-share .monkey-color-red {
+    color: #fff !important;
+  }
+}
+
 .card-result .card-result-header img {
   width: 2.96875rem;
   height: 2.96875rem;
@@ -1121,6 +1208,9 @@ body {
   .monkey-result .monkey-color-sunshine,
   .monkey-result .card-result-body {
     color: #fff !important;
+  }
+  .card-result .card-result-header {
+    text-align: center;
   }
 }
 
@@ -1183,5 +1273,84 @@ body {
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   grid-row: span 2 / 5;
+}
+
+@media (max-width: 1024px) {
+  .typical-students {
+    background-color: #f9e3d9;
+    border-radius: 1.5rem;
+    background-image: none;
+  }
+  .typical-students-video {
+    height: 11.3125rem;
+    position: relative;
+  }
+  .typical-students-video .icon-play {
+    width: 2.875rem !important;
+    height: 2.875rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+.talk-about-monkey-card {
+  border-radius: 0.875rem;
+  overflow: hidden;
+  border: 1px solid #bcbec0;
+}
+
+.talk-about-monkey-card .card-image {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.talk-about-monkey-card .card-image:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.talk-about-monkey-card .card-image img {
+  border-radius: 0;
+}
+
+.talk-about-monkey-card .talk-about-monkey-card-title {
+  margin-bottom: 1.875rem;
+  cursor: pointer;
+}
+
+.talk-about-monkey-card .talk-about-monkey-card-title:hover {
+  color: #ed232f;
+}
+
+.talk-about-monkey-card .talk-about-monkey-card-body {
+  padding: 1.25rem;
+}
+
+.talk-about-monkey-card .talk-about-monkey-card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.talk-about-monkey-card .talk-about-monkey-card-footer .card-img-top {
+  height: 2rem;
+  width: auto;
+}
+
+.talk-about-monkey-card .talk-about-monkey-card-footer .card-img-top img {
+  width: auto;
+  height: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

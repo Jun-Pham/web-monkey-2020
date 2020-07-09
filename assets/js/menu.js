@@ -45,12 +45,12 @@ $(".toggler-icon").click(function () {
   $(".monkey-collapse").toggleClass("active");
 });
 
-function onShowDropdown() {
-  const elmDropdown = document.getElementById("content-dropdown-menu");
+function onShowContentDropdown(id) {
+  const elmDropdown = document.getElementById(id);
   elmDropdown.classList.toggle("active");
 }
 
-const listContents = document.querySelectorAll(".content-item");
+const listContents = document.querySelectorAll(".content-item"); 
 for (let i = 0; i < listContents.length; i++) {
   listContents[i].addEventListener("click", function(e){
     e.stopPropagation();
@@ -60,6 +60,21 @@ for (let i = 0; i < listContents.length; i++) {
       "support-content"
     );
     elmInputSupportContent.value = innerText;
-    onShowDropdown()
+    onShowContentDropdown('content-desktop') 
+  }) 
+}
+
+
+const listContentsMobile = document.querySelectorAll(".content-item-mobile"); 
+for (let i = 0; i < listContentsMobile.length; i++) {
+  listContentsMobile[i].addEventListener("click", function(e){
+    e.stopPropagation();
+    e.preventDefault();
+    const innerText = this.innerText;
+    const elmInputSupportContent = document.getElementById(
+      "support-content-mobile"
+    );
+    elmInputSupportContent.value = innerText;
+    onShowContentDropdown('content-mobile')
   }) 
 }

@@ -1,3 +1,13 @@
 .parents-share{
     background-image: url(../images/banner/bg-parents-share.svg);
 }
+@media (max-width: 1024px){
+    .parents-share{
+        background-color: $red;
+        border-radius: 1.5rem;
+        background-image: none;
+        .monkey-color-red{
+            color:$white !important;
+        }
+    }
+}

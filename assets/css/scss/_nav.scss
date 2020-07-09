@@ -76,8 +76,7 @@
           padding: 0.55rem 1.5rem;
           border-bottom: 1px solid rgba(0, 194, 243, 0.22);
           &:hover {
-            background-color: $blue;
-            color: $white;
+            color: $red;
           }
         }
       }
@@ -104,7 +103,7 @@
         -webkit-transition-timing-function: ease-out;
         transition-timing-function: ease-out;
       }
-      &.active {
+      &.active,&:hover {
         .nav-link {
           color: $red;
           .icon-caret-down {
