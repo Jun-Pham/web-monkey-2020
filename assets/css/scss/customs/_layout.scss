@@ -15,12 +15,16 @@ html {
   html {
     @include font-style(14px);
   }
-}
-@media (max-width: 440px) {
-  html {
-    @include font-style(12px);
+  .monkey-course {
+    @include font-style(16px);
   }
 }
+@media (max-width: 1024px) {
+  html {
+    @include font-style(16px);
+  }
+}
+
 // @media (max-width: 991px) {
 //   html {
 //     @include font-style(12px);
