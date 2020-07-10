@@ -1,5 +1,5 @@
 .monkey-course {
-  .title{
+  .title {
     padding-top: 3.3125rem;
     padding-bottom: 1.875rem;
   }
@@ -12,7 +12,14 @@
       margin: auto;
     }
     .card-body {
-      min-height: 7.5rem;
+      height: 7.5rem;
+      // -webkit-line-clamp: 3;
+      // -webkit-box-orient: vertical;
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+      // width: 100%;
+      // display: block;
+      // display: -webkit-box;
     }
   }
 }
@@ -34,7 +41,7 @@
 }
 
 @media (max-width: 991px) {
-  .course-ware{
+  .course-ware {
     &.monkey-bg-light-gray {
       background-color: $white;
     }

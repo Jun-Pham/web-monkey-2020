@@ -2,8 +2,10 @@ const listMonkeyNavItem = document.querySelectorAll(".monkey-nav-item");
 const isMobile = /android|webos|iphone|ipod|iPad|blackberry|iemobile|opera mini/i.test(
   navigator.userAgent.toLowerCase()
 );
+let innerWidth = window.innerWidth
+
 for (let i = 0; i < listMonkeyNavItem.length; i++) {
-  if (isMobile) {
+  if (isMobile || innerWidth <= 1024) {
     listMonkeyNavItem[i].addEventListener("click", function (e) {
       e.stopPropagation();
       if (this.classList.contains("active")) {

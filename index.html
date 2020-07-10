@@ -152,9 +152,9 @@
 						                              Nam</p>
 					</div>
 				</div>
-				<div class="col-12 d-mobile ">
+				<div class="col-12 d-mobile banner-mobile-wrapper">
 					<img class="banner-mobile" src="./assets/images/banner/banner-home-mobile.png" alt="" />
-					<div class="monkey-f-header monkey-fz-40 text-center monkey-color-white mb-5">MONKEY - TIẾNG ANH<br/>
+					<div class="monkey-f-header title monkey-fz-40 text-center monkey-color-white mb-5">MONKEY - TIẾNG ANH<br/>
 						CHO MỌI TRẺ EM
 					</div>
 					<div class="banner-video background-style distance-center ">
@@ -382,13 +382,13 @@
 										  <!-- Modal -->
 										  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 											<div class="modal-dialog" role="document">
-											  <div class="modal-content">
+											  <div class="modal-content pt-4 pb-4">
 								 				<div class="modal-body">
-												  ...
+												 <p class="monkey-f-regular monkey-fz-22">Cảm ơn ba mẹ đã đăng ký nhận tư vấn.
+													Monkey sẽ liên hệ trong vài phút nữa ba mẹ nhé!</p>
 												</div>
-												<div class="modal-footer">
-												  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-												  <button type="button" class="btn btn-primary">Save changes</button>
+												<div class="mt-2">
+													<button type="button" class="btn-registration-mobile btn rounded-pill" data-dismiss="modal">Hoàn tất</button>
 												</div>
 											  </div>
 											</div>
@@ -405,7 +405,7 @@
 	<section class="monkey-awards pt-lg-4">
 		<div class="container-fluid container-xl">
 			<div class="title text-center">
-				<img class="icon-monkey-course rounded-circle" src="./assets/images/icon/icon-monkey-course.svg"
+				<img class="icon-monkey-course rounded-circle" src="./assets/images/icon/icon-monkey-awards.svg"
 				     alt="#"/>
 				<span class="ml-2 monkey-f-header monkey-fz-30 monkey-color-red text-uppercase align-middle"> Các giải thưởng của monkey</span>
 			</div>
@@ -719,14 +719,14 @@
 						<div class="row d-mobile">
 							<div class="col-6">
 								<div class="talk-about-monkey-card-mobile monkey-bg-white mb-3 distance-center">
-									<img src="./assets/images/img/img-talk-about-monkey-1.png"/>
+									<img src="./assets/images/icon/talk-about-monkey-2.svg"/>
 								</div>
 							</div>
 							<div class="col-6"><div class="talk-about-monkey-card-mobile monkey-bg-white mb-3 distance-center">
 								<img src="./assets/images/img/img-talk-about-monkey-1.png"/>
 							</div></div>
 							<div class="col-6"><div class="talk-about-monkey-card-mobile monkey-bg-white mb-3 distance-center">
-								<img src="./assets/images/img/img-talk-about-monkey-2.svg"/>
+								<img src="./assets/images/icon/talk-about-monkey-3.svg"/>
 							</div></div>
 							<div class="col-6"><div class="talk-about-monkey-card-mobile monkey-bg-white mb-3 distance-center">
 									<img src="./assets/images/img/img-talk-about-monkey-2.svg"/>
@@ -741,8 +741,10 @@
 	<section class="parents-share background-style">
 		<div class="container-fluid container-xl">
 			<div class="title text-center">
-				<img class="icon-monkey-course rounded-circle" src="./assets/images/icon/icon-monkey-course.svg"
-				     alt="#"/>
+				<img class="icon-monkey-course rounded-circle d-desktop" src="./assets/images/icon/icon-monkey-course.svg"
+					 alt="#"/>
+				<img class="icon-monkey-course rounded-circle d-mobile" src="./assets/images/icon/icon-parents-share.svg"
+				alt="#"/>
 				<span class="ml-2 monkey-f-header monkey-fz-30 monkey-color-red text-uppercase align-middle"> Ba mẹ cần biết</span>
 			</div>
 			<div class="row justify-content-center">
@@ -1024,7 +1026,7 @@
 		$ ('.owl-carousel').owlCarousel ({
 			loop       : false,
 			margin     : 20,
-			nav        : true,
+			nav        : false,
 			responsive : {
 				0    : {
 					items : 1,

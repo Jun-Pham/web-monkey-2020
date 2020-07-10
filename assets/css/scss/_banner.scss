@@ -33,9 +33,15 @@
     .row {
       height: auto;
     }
-    .banner-mobile {
-      width: 100%;
-      height: 20.5625rem;
+    .banner-mobile-wrapper{
+      .title{
+        margin-top:-4.375rem;
+      }
+      .banner-mobile {
+        width: 100%;
+        height: 20.5625rem;
+      }
+  
     }
   }
 }

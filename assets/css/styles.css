@@ -207,6 +207,10 @@
 }
 
 .monkey-fz-20 {
+  font-size: 1.375rem;
+}
+
+.monkey-fz-22 {
   font-size: 1.25rem;
 }
 
@@ -679,25 +683,45 @@ body {
   transition-timing-function: ease-out;
 }
 
-.monkey-nav .monkey-collapse .monkey-nav-item.active .nav-link, .monkey-nav .monkey-collapse .monkey-nav-item:hover .nav-link {
+.monkey-nav .monkey-collapse .monkey-nav-item.active .nav-link {
   color: #ed232f;
 }
 
-.monkey-nav .monkey-collapse .monkey-nav-item.active .nav-link .icon-caret-down .fa-angle-down, .monkey-nav .monkey-collapse .monkey-nav-item:hover .nav-link .icon-caret-down .fa-angle-down {
+.monkey-nav .monkey-collapse .monkey-nav-item.active .nav-link .icon-caret-down .fa-angle-down {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.monkey-nav .monkey-collapse .monkey-nav-item.active::before, .monkey-nav .monkey-collapse .monkey-nav-item:hover::before {
+.monkey-nav .monkey-collapse .monkey-nav-item.active::before {
   left: 0;
   right: 0;
 }
 
-.monkey-nav .monkey-collapse .monkey-nav-item.active .monkey-dropdown-menu, .monkey-nav .monkey-collapse .monkey-nav-item:hover .monkey-dropdown-menu {
+.monkey-nav .monkey-collapse .monkey-nav-item.active .monkey-dropdown-menu {
   opacity: 1;
   height: auto;
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
+}
+
+@media (min-width: 1024px) {
+  .monkey-nav .monkey-collapse .monkey-nav-item:hover .nav-link {
+    color: #ed232f;
+  }
+  .monkey-nav .monkey-collapse .monkey-nav-item:hover .nav-link .icon-caret-down .fa-angle-down {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .monkey-nav .monkey-collapse .monkey-nav-item:hover::before {
+    left: 0;
+    right: 0;
+  }
+  .monkey-nav .monkey-collapse .monkey-nav-item:hover .monkey-dropdown-menu {
+    opacity: 1;
+    height: auto;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
 }
 
 .monkey-nav .monkey-collapse .monkey-nav-item .nav-link {
@@ -736,7 +760,7 @@ body {
     height: 30px;
   }
   .monkey-nav .monkey-collapse .monkey-nav-item .nav-link .icon-caret-down .fa-angle-down {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     line-height: 0;
   }
 }
@@ -927,7 +951,10 @@ body {
   .monkey-banner .row {
     height: auto;
   }
-  .monkey-banner .banner-mobile {
+  .monkey-banner .banner-mobile-wrapper .title {
+    margin-top: -4.375rem;
+  }
+  .monkey-banner .banner-mobile-wrapper .banner-mobile {
     width: 100%;
     height: 20.5625rem;
   }
@@ -950,7 +977,7 @@ body {
 }
 
 .monkey-course .card .card-body {
-  min-height: 7.5rem;
+  height: 7.5rem;
 }
 
 .course-ware {
@@ -1431,6 +1458,9 @@ body {
     border-radius: 1.25rem;
     padding-top: 2.875rem;
     padding-bottom: 2.875rem;
+  }
+  .talk-about-monkey img {
+    height: 2.4375rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
