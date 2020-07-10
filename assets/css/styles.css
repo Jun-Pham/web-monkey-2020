@@ -465,6 +465,11 @@
   background-color: #ed232f;
 }
 
+.parents-share .owl-theme .owl-dots .owl-dot.active span,
+.parents-share .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #fff;
+}
+
 @media (max-width: 1024px) {
   .d-desktop {
     display: none !important;

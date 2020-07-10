@@ -41,6 +41,12 @@
 .owl-theme .owl-dots .owl-dot:hover span {
   background-color: $red;
 }
+.parents-share {
+  .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: $white;
+  }
+}
 @media (max-width: 1024px) {
   .d-desktop {
     display: none !important;
